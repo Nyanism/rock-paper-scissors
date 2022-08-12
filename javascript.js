@@ -36,3 +36,11 @@ function playRound(playerSelection, computerSelection){
     }
   } 
 }
+
+function game() {
+  for(let ii=0; ii<5; ii++){
+    let playerSelection = prompt("Please choose either rock, paper or scissors:");
+    const computerSelection = getComputerChoice();
+    console.log(playRound(playerSelection, computerSelection));
+  }
+}
